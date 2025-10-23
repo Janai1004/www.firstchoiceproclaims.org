@@ -1,21 +1,46 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+import "../styles/global.css";
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Choice ProClaims, LLC | Medical Billing Consultants</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333;">
+    <header style="background-color: #008080; color: white; padding: 2rem; text-align: center;">
+      <h1>First Choice ProClaims, LLC</h1>
+      <p>Professional Medical Billing & Revenue Cycle Management</p>
+    </header>
+
+    <main style="padding: 2rem; max-width: 800px; margin: auto;">
+      <h2 style="color: #555;">Our Mission</h2>
+      <p>
+        To deliver accurate, efficient, and ethical medical billing solutions that
+        maximize reimbursement and strengthen provider revenue performance.
+      </p>
+
+      <h2 style="color: #555;">Our Services</h2>
+      <ul>
+        <li>Claims submission & insurance verification</li>
+        <li>Accounts receivable follow-up</li>
+        <li>Patient billing & collections</li>
+        <li>Credentialing & payer enrollment</li>
+        <li>Revenue cycle consulting & audit support</li>
+      </ul>
+
+      <h2 style="color: #555;">Contact Us</h2>
+      <p>
+        📍 4677 Broadway St, Ste B, Gary, IN 46407<br />
+        ☎️ 219-999-7428<br />
+        ✉️ info@firstchoiceproclaims.org
+      </p>
+    </main>
+
+    <footer style="text-align:center; padding:1rem; background:#e0e0e0;">
+      <small>© 2025 First Choice ProClaims, LLC | All Rights Reserved</small>
+    </footer>
+  </body>
+</html>
+
